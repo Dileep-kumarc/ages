@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate various probability scenarios including simple probability, combinations, and permutations">
+    <title>Probability Calculator - MultiCalc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate various probability scenarios including simple probability, combinations, and permutations">
+    <title>Probability Calculator - MultiCalc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav class="navbar">
+        <div class="logo">MultiCalc</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Probability Calculator</h1>
+        
+        <div class="calculator-section">
+            <h2>Simple Probability</h2>
+            <div class="input-group">
+                <label for="favorable">Favorable Outcomes:</label>
+                <input type="number" id="favorable" min="0" step="1">
+            </div>
+            <div class="input-group">
+                <label for="total">Total Possible Outcomes:</label>
+                <input type="number" id="total" min="1" step="1">
+            </div>
+            <button onclick="calculateProbability()">Calculate Probability</button>
+            <div id="probability-result" class="result"></div>
+        </div>
+
+        <div class="calculator-section">
+            <h2>Combinations (nCr)</h2>
+            <div class="input-group">
+                <label for="n">Total Items (n):</label>
+                <input type="number" id="n" min="0" step="1">
+            </div>
+            <div class="input-group">
+                <label for="r">Items to Choose (r):</label>
+                <input type="number" id="r" min="0" step="1">
+            </div>
+            <button onclick="calculateCombination()">Calculate Combination</button>
+            <div id="combination-result" class="result"></div>
+        </div>
+
+        <div class="calculator-section">
+            <h2>Permutations (nPr)</h2>
+            <div class="input-group">
+                <label for="n-perm">Total Items (n):</label>
+                <input type="number" id="n-perm" min="0" step="1">
+            </div>
+            <div class="input-group">
+                <label for="r-perm">Items to Arrange (r):</label>
+                <input type="number" id="r-perm" min="0" step="1">
+            </div>
+            <button onclick="calculatePermutation()">Calculate Permutation</button>
+            <div id="permutation-result" class="result"></div>
+        </div>
+    </div>
+    <script src="probability.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MultiCalc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

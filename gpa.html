@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your Grade Point Average (GPA) based on grades and credits">
+    <title>GPA Calculator - MultiCalc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MultiCalc</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="calculator-container">
+            <h1>GPA Calculator</h1>
+            <p>Calculate your Grade Point Average based on course grades and credits</p>
+            
+            <div class="ad-container">
+                <!-- AdSense Ad Unit -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-placeholder"
+                    data-ad-slot="placeholder"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+            </div>
+
+            <form id="gpaCalculator" class="calculator-form">
+                <div class="form-group">
+                    <label for="gradeSystem">Grade System:</label>
+                    <select id="gradeSystem" required>
+                        <option value="4.0">4.0 Scale (A, B, C, D, F)</option>
+                        <option value="4.3">4.3 Scale (A+, A, A-, etc.)</option>
+                        <option value="100">Percentage (0-100)</option>
+                    </select>
+                </div>
+
+                <div id="coursesContainer">
+                    <!-- Course entries will be added here dynamically -->
+                </div>
+
+                <button type="button" id="addCourse">Add Another Course</button>
+                <button type="submit">Calculate GPA</button>
+            </form>
+
+            <div id="result" class="result-container" style="display: none;">
+                <h3>Your GPA Results:</h3>
+                <div class="result-grid">
+                    <div class="result-item">
+                        <span id="gpaValue" class="highlight">0.00</span>
+                        <label>GPA</label>
+                    </div>
+                    <div class="result-item">
+                        <span id="totalCredits">0</span>
+                        <label>Total Credits</label>
+                    </div>
+                </div>
+                <div class="gpa-scale">
+                    <h4>GPA Scale Reference:</h4>
+                    <div class="scale-grid" id="scaleReference">
+                        <!-- Scale reference will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MultiCalc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="gpa.js"></script>
+</body>
+</html>
